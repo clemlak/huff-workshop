@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.15;
 
-import "foundry-huff/HuffDeployer.sol";
-import "forge-std/Test.sol";
-import "forge-std/console.sol";
-
+import {HuffDeployer} from "foundry-huff/HuffDeployer.sol";
+import {Test} from "forge-std/Test.sol";
 
 contract ComputeTest is Test {
     Compute public compute;
@@ -22,5 +20,5 @@ contract ComputeTest is Test {
 }
 
 interface Compute {
-    function compute(uint256,uint256) external view returns (uint256);
+    function compute(uint256, uint256) external view returns (uint256);
 }
